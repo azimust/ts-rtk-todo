@@ -1,0 +1,35 @@
+li {
+    list-style: none;
+}
+
+.App {
+    max-width: 500px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+.todo-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.todos li {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.todos li span {
+    color: red;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.todos li input {
+    cursor: pointer;
+}
+
+.todos li input:checked+p {
+    text-decoration: line-through;
+}
