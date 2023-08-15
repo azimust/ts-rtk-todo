@@ -1,9 +1,9 @@
 import TodoItem from '../../components/TodoItem'
 import { UseAppDispatch } from '../../redux/redux-hooks'
 import { Todo } from '../../types';
-import { removeTodo, toggleTodo } from '../../redux/todoSlice';
+import { removeTodo, toggleTodo } from './todoSlice';
 import { useSelector } from 'react-redux';
-import { selectAllTodos } from '../../redux/todoSelectors';
+import { selectAllTodos } from './todoSelectors';
 
 const TodoList = () => {
     const list = useSelector(selectAllTodos);

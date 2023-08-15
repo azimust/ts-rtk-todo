@@ -1,12 +1,12 @@
 import { UseAppDispatch } from '../../redux/redux-hooks'
-import { addTodo } from './todoSlice';
 import NewItem from '../../components/NewItem';
+import { createTodo } from './todoAsyncActions';
 
-const NewTodo = () => {
+const NewAsyncTodo = () => {
     const dispatch = UseAppDispatch();
 
     const handleNewTodo = (title: string) => {
-        dispatch(addTodo(title))
+        dispatch(createTodo(title))
     }
 
     return (
@@ -14,4 +14,4 @@ const NewTodo = () => {
     )
 }
 
-export default NewTodo
+export default NewAsyncTodo
