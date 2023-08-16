@@ -12,7 +12,7 @@ const initialState: TodoSlice = {
     list: []
 };
 
-const todoSlice: any = createSlice({
+export const todoSlice = createSlice({
     name: '@todos',
     initialState,
     reducers: {},

@@ -4,7 +4,7 @@ import asyncTodoReducer from '../features/AsyncTodo/asyncTodoSlice'
 
 const rootReducer = combineReducers({
     todos: todoReducer,
-    asynсTodos: asyncTodoReducer,
+    asyncTodos: asyncTodoReducer
 });
 
 export const store = configureStore({
